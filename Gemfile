@@ -2,13 +2,11 @@
 
 source "https://rubygems.org"
 
-# Specify the gems required for your project
-gem "sinatra"
-gem "activerecord"
-gem "sqlite3"
+gem "activerecord", "~> 7.0"
 
-# Gems for development and testing
-group :development, :test do
-  gem "rspec"
-  gem "pry"
-end
+gem 'sinatra-activerecord'
+
+gem "sqlite3"
+gem "rake"
+gem 'require_all'
+gem "pry"
